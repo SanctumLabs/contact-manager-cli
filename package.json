@@ -1,19 +1,14 @@
 {
-  "name": "contact-manager-cli",
+  "name": "contact-manager",
   "version": "1.0.0",
   "description": "Manage your contacts from Command Line",
   "main": "index.js",
   "preferGlobal": true,
   "bin": "./contact.js",
   "scripts": {
-    "serve": "firebase serve --only functions",
-    "shell": "firebase experimental:functions:shell",
-    "start": "npm run shell",
-    "logs": "firebase functions:log",
-    "deploy": "yarn run publish && firebase deploy --only functions",
-    "prepublish": "rimraf firefunctions/functions",
-    "publish": "babel firefunctions/functionsES6 --out-dir firefunctions/functions --presets=es2015 --copy-files --ignore 'node_modules'",
-    "postpublish": "cd firefunctions/functions && yarn",
+    "prebuild":"rimraf build",
+    "build":"babel . --out-dir build/ --ignore 'node_modules,firefunctions'",
+    "start": "nodemon --exec babel-node -- contact.js",    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

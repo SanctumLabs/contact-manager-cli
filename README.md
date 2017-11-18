@@ -58,3 +58,35 @@ Now you can use `firebase-tools` to setup your project with firebase
 ``` bash
 $ firebase login # logs you into firebase console
 ```
+
+## Running the app
+
+You will need to setup a project on Firebase console after which you can enable the project in the firefunctions directory.
+
+```bash
+$ cd firefunctions
+$ firebase use <PROJECT_ID>
+```
+
+Next step is to deploy functions:
+
+```bash
+$ npm run deploy
+```
+> Run this command inside the `firefunctions` directory 
+
+After which you can take the CLI for a run.
+
+```bash
+$ cd .. # if in the firefunctions directory
+$ npm run build
+$ npm install -g
+$ npm link # not necessary
+``` 
+
+This will run a build and transpile the code before setting it in the build/ directory. You can then install it globally and link if necessary.
+
+One thing to keep in mind: During development, any change you make in the project will not be visible if you simply execute the contact command with the given options. If you run `which contact-manager`, you will realize that the path of contact is not the same as the project path in which you are working. To prevent this, simply run `npm link` in your project folder. This will automatically establish a symbolic link between the executable command and the project directory. Henceforth, whatever changes you make in the project directory will be reflected in the contact command as well.
+
+[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](http://forthebadge.com)

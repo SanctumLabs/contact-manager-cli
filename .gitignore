@@ -3,4 +3,6 @@ node_modules/
 .env/
 firefunctions/fuctionsES6/node_modules/
 firefunctions/fuctions/
-.vscode
+.vscode/
+build/
+*.log
