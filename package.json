@@ -7,7 +7,7 @@
   "bin": "./contact.js",
   "scripts": {
     "prebuild":"rimraf build",
-    "build":"babel . --out-dir build/ --ignore 'node_modules,firefunctions'",
+    "build":"babel . --out-dir build/ --presets=2015 --ignore 'node_modules,firefunctions'",
     "start": "nodemon --exec babel-node -- contact.js",    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
