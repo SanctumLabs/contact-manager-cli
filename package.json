@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Manage your contacts from Command Line",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./contact.js",
   "scripts": {
     "serve": "firebase serve --only functions",
     "shell": "firebase experimental:functions:shell",
     "start": "npm run shell",
-    "logs": "firebase functions:log",    
-    "deploy": "yarn run publish && firebase deploy --only functions",    
+    "logs": "firebase functions:log",
+    "deploy": "yarn run publish && firebase deploy --only functions",
     "prepublish": "rimraf firefunctions/functions",
     "publish": "babel firefunctions/functionsES6 --out-dir firefunctions/functions --presets=es2015 --copy-files --ignore 'node_modules'",
     "postpublish": "cd firefunctions/functions && yarn",
@@ -45,6 +47,7 @@
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.12.1",
     "rimraf": "^2.6.2"
   }
 }
