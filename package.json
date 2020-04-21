@@ -6,10 +6,12 @@
   "preferGlobal": true,
   "bin": "./contact.js",
   "scripts": {
-    "prebuild":"rimraf build",
-    "build":"babel . --out-dir build/ --presets=2015 --ignore 'node_modules,firefunctions'",
-    "start": "nodemon --exec babel-node -- contact.js",    
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "rimraf build",
+    "build": "babel . --out-dir build/ --presets=2015 --ignore 'node_modules,firefunctions'",
+    "start": "nodemon --exec babel-node -- contact.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,13 +38,15 @@
     "commander": "^2.11.0",
     "core-js": "^2.5.1",
     "inquirer": "^4.0.0",
-    "ora": "^1.3.0"
+    "ora": "^1.3.0",
+    "snyk": "^1.306.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
-    "nodemon": "^1.12.1",
+    "nodemon": "^2.0.3",
     "rimraf": "^2.6.2"
-  }
+  },
+  "snyk": true
 }
