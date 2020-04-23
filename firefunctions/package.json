@@ -9,10 +9,11 @@
     "start": "npm run shell",
     "logs": "firebase functions:log",
     "deploy": "npm run publish && firebase deploy --only functions",
-    "prepublish": "rimraf functions",
+    "prepublish": "yarn run snyk-protect && rimraf functions",
     "publish": "babel functionsES6 --out-dir functions --presets=es2015 --copy-files --ignore 'node_modules'",
     "postpublish": "cd functions && npm install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect"
   },
   "license": "MIT",
   "devDependencies": {
@@ -20,5 +21,9 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "rimraf": "^2.6.2"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.306.0"
   }
 }
