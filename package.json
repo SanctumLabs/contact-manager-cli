@@ -39,7 +39,7 @@
     "chalk": "^2.4.2",
     "inquirer": "^7.3.3",
     "ora": "^1.4.0",
-    "snyk": "^1.316.1"
+    "snyk": "^1.425.4"
   },
   "devDependencies": {
     "babel": "^6.23.0",
