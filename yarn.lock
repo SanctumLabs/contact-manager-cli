@@ -849,10 +849,10 @@ commander@^2.11.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
-commander@^2.20.3:
-  version "2.20.3"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
-  integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+commander@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-9.0.0.tgz#86d58f24ee98126568936bd1d3574e0308a99a40"
+  integrity sha512-JJfP2saEKbQqvW+FI93OYUB4ByV5cizMpFMiiJI8xDbBvQvSkIk0VvQdn1CZ8mqAO8Loq2h0gYTYtDFUZUeERw==
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -2253,10 +2253,10 @@ sntp@1.x.x:
   dependencies:
     hoek "2.x.x"
 
-snyk@^1.834.0:
-  version "1.836.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.836.0.tgz#291d94f9eb7910f292f344eee5b9ca90c9e3c64f"
-  integrity sha512-iPJ4SCAEArquqo1Aq11KbHOWEu0OFauRn/4Acoq+hDqgTYN9IV8i5d6uHPAo3ePV2g24nF0Pb9N0sxIGgp833w==
+snyk@^1.840.0:
+  version "1.842.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.842.0.tgz#24f3d9b0e862fc0c8418e4e82f398543f69f94b6"
+  integrity sha512-eyB80R6bSR9Sa78/c/dygUMp244WZXYScEn9EEJL3oCHzp+5PpCS5qQLh+bdPZFOI3kGRHACvwmdVKGtVPg7rQ==
 
 source-map-support@^0.4.15:
   version "0.4.18"
