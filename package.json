@@ -39,7 +39,7 @@
     "commander": "^9.0.0",
     "inquirer": "^7.3.3",
     "ora": "^1.4.0",
-    "snyk": "^1.840.0"
+    "snyk": "^1.848.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",
