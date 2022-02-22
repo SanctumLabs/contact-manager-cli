@@ -34,7 +34,7 @@
   "homepage": "https://github.com/Wyvarn/contact-manager-cli#readme",
   "dependencies": {
     "axios": "^0.26.0",
-    "core-js": "^3.21.0",
+    "core-js": "^3.21.1",
     "chalk": "^5.0.0",
     "commander": "^9.0.0",
     "inquirer": "^8.2.0",
